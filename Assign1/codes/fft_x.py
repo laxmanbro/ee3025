@@ -62,14 +62,16 @@ plt.plot(np.angle(H))
 plt.title(r'$\angle{H(k)}$')
 plt.grid()
 
-#If using termux
-
 plt.savefig('../figs/fft_x.pdf')
 plt.savefig('../figs/fft_x.eps')
-subprocess.run(shlex.split("termux-open ../figs/fft_x.pdf"))
+
+#If using termux
+
+
+# subprocess.run(shlex.split("termux-open ../figs/fft_x.pdf"))
 
 #else
 
 
-# plt.show()
+plt.show()
 

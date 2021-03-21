@@ -45,12 +45,14 @@ plt.xlabel('$n$')
 plt.ylabel('$y(n)$')
 plt.grid()# minor
 
-#If using termux
-
 plt.savefig('../figs/fft_y.pdf')
 plt.savefig('../figs/fft_y.eps')
-subprocess.run(shlex.split("termux-open ../figs/fft_y.pdf"))
+
+#If using termux
+
+
+# subprocess.run(shlex.split("termux-open ../figs/fft_y.pdf"))
 
 #else
 
-# plt.show()
+plt.show()

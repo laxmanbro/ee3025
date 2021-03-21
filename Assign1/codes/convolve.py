@@ -53,10 +53,10 @@ plt.grid()# minor
 
 #If using termux
 
-plt.savefig('../figs/convolve.pdf')
-plt.savefig('../figs/convolve.eps')
-subprocess.run(shlex.split("termux-open ../figs/convolve.pdf"))
+# plt.savefig('../figs/convolve.pdf')
+# plt.savefig('../figs/convolve.eps')
+# subprocess.run(shlex.split("termux-open ../figs/convolve.pdf"))
 
 #else
-#plt.show()
+plt.show()
 

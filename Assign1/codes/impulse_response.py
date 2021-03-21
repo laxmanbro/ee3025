@@ -46,13 +46,15 @@ plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid() 
 
-#If using termux
-
 plt.savefig('../figs/impulse_response.pdf')
 plt.savefig('../figs/impulse_response.eps')
-subprocess.run(shlex.split("termux-open ../figs/impulse_response.pdf"))
+
+#If using termux
+
+
+# subprocess.run(shlex.split("termux-open ../figs/impulse_response.pdf"))
 
 #else
 
-# plt.show()
+plt.show()
 

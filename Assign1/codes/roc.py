@@ -72,12 +72,14 @@ plt.grid()# minor
 plt.axis('scaled')
 plt.axis([-1.5,1.5,-1.5,1.5])
 
-#If using termux
-
 plt.savefig('../figs/roc.pdf')
 plt.savefig('../figs/roc.eps')
-subprocess.run(shlex.split("termux-open ../figs/roc.pdf"))
+
+#If using termux
+
+
+# subprocess.run(shlex.split("termux-open ../figs/roc.pdf"))
 
 #else
 
-# plt.show()
+plt.show()

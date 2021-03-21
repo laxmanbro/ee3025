@@ -62,13 +62,18 @@ plt.xlabel('$N$')
 plt.ylabel('$y(N)$')
 plt.grid()
 
+
+plt.savefig('../figs/plot_xy.pdf')
+plt.savefig('../figs/plot_xy.eps')
+
+
 #If using termux
 
-plt.savefig('..figs/plot_xy.pdf')
-plt.savefig('..figs/plot_xy.eps')
-subprocess.run(shlex.split("termux-open ../figs/plot_xy.pdf"))
+
+# subprocess.run(shlex.split("termux-open ../figs/plot_xy.pdf"))
 
 # else
 
-# plt.show()
+plt.show()
+
 
